@@ -3,29 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tacoyummers.github.io</title>
+    <title>My Personal Website</title>
     <style>
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .username {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .description-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
+            width: 80%;
+            max-width: 600px;
         }
-        h1 {
-            font-size: 3em;
+        .description-box h2 {
+            margin-bottom: 10px;
         }
-        h2 {
-            font-size: 2em;
-            margin-top: 0.5em;
+        .description-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .description-box li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>tacoyummers.github.io</h1>
-    <h2>taco pc's personal website</h2>
+
+    <div class="profile">
+        <img src="tacoicon.png" alt="Profile Picture">
+        <div class="username">Taco_PC / TacoYummers</div>
+    </div>
+
+    <div class="description-box">
+        <h2>About Me</h2>
+        <p>Hi, I'm taco! I'm a game developer that uses GMS2 (Gamemaker Studio 2). I love making (and cancelling them someday) lots of games / projects! </p>
+        <h3>Who am i:</h3>
+        <ul>
+            <li>Gay 🏳️‍🌈</li>
+            <li>Furry 🐾</li>
+            <li>Artist (Aseprite & Adobe) 🎨</li>
+            <li>Coder (GML & Lua) 💻</li>
+            <li>Composer (FL Studio) 🎤</li>
+        </ul>
+        <h3>Interests:</h3>
+        <ul>
+            <li>Creative</li>
+            <li>Curious</li>
+            <li>Friendly</li>
+            <li>Adventurous</li>
+            <li>Hardworking</li>
+        </ul>
+    </div>
+
 </body>
 </html>
