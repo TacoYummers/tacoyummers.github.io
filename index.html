@@ -3,74 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TacoYummers</title>
+    <title>Old-School Pixel Art Website</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
+            background-color: #000;
+            color: #FFF;
+            font-family: "Comic Sans MS";
             margin: 0;
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            background-color: #1e1e1e;
-            color: #f0f0f0;
-        }
-        .profile {
+            padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-bottom: 30px;
+            min-height: 100vh;
         }
-        .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-right: 20px;
-        }
-        .username {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .description-box {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
+
+        header {
             text-align: center;
-            width: 80%;
-            max-width: 600px;
+            margin-bottom: 20px;
         }
-        .description-box h2 {
-            margin-bottom: 10px;
+
+        h1 {
+            font-size: 48px;
+            color: #ee00ff;
+            text-shadow: 8px 8px #6a0abf;
         }
-        .description-box ul {
-            list-style-type: none;
-            padding: 0;
+
+        .content {
+            max-width: 800px;
+            text-align: center;
         }
-        .description-box li {
-            margin-bottom: 5px;
+
+        .pixel-art {
+            margin-top: 20px;
+        }
+
+        .pixel-art img {
+            image-rendering: pixelated;
+            width: 200px;
+            height: 200px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-
-    <div class="profile">
-        <img src="tacoicon.png" alt="Profile Picture">
-        <div class="username">Taco_PC / TacoYummers</div>
+    <header>
+        <h1>Hi, I'm Taco!</h1>
+    </header>
+    <div class="content">
+        <p>I'm a game developer (I use GMS2) and game modder (Usually modding GMS2 games)</p>
+        <p>I mod Pizza Tower, Minecraft, Doom, Etc</p>
+        <p>I also love oldschool / 2000s media, and modding old games or playing them.</p>
     </div>
-
-    <div class="description-box">
-        <h2>About Me</h2>
-        <p>Hi, I'm taco! I'm a game developer that uses GMS2 (Gamemaker Studio 2). I love making (and cancelling them someday) lots of games / projects! </p>
-        <h3>Who am i:</h3>
-        <ul>
-            <li>Gay 🏳️‍🌈</li>
-            <li>Furry 🐾</li>
-            <li>Artist (Aseprite & Adobe) 🎨</li>
-            <li>Coder (GML & Lua) 💻</li>
-            <li>Composer (FL Studio) 🎤</li>
-        </ul>
-    </div>
-
+    <footer>
+        <p>NOT copyrighted, i think?</p>
+    </footer>
 </body>
 </html>
