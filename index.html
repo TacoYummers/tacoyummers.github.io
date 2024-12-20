@@ -1,66 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Old-School Pixel Art Website</title>
+    <title>Hi, I'm Taco!</title>
     <style>
+        @font-face {
+            font-family: "OkFont";
+            src: url("ok.ttf") format("truetype");
+        }
         body {
-            background-color: #000;
+            background-image: url("bgSCALED.png");
+            background-repeat: repeat;
+            background-position: 0 0;
+            background-size: auto;
+            image-rendering: pixelated;
+            animation: scrollBackground 4s steps(48) infinite;
             color: #FFF;
-            font-family: "Comic Sans MS";
+            font-family: "OkFont", "Comic Sans MS", "Comic Sans", cursive;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
+            font-size: 32px;
+            -webkit-font-smoothing : none;
         }
-
-        header {
+        @keyframes scrollBackground {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 128px 128px;
+            }
+        }
+        .content-wrapper {
+            animation: jitter 8s steps(8) infinite;
             text-align: center;
-            margin-bottom: 20px;
         }
-
-        h1 {
-            font-size: 48px;
-            color: #ee00ff;
-            text-shadow: 8px 8px #6a0abf;
+        @keyframes jitter {
+            0% { transform: translateY(4px); }
+            10% { transform: translateY(-12px); }
+            20% { transform: translateY(-16px); }
+            30% { transform: translateY(-18px); }
+            40% { transform: translateY(-16px); }
+            50% { transform: translateY(-12px); }
+            60% { transform: translateY(-2px); }
+            70% { transform: translateY(8px); }
+            80% { transform: translateY(18px); }
+            90% { transform: translateY(20px); }
+            100% { transform: translateY(8px); }
         }
-
         .content {
-            max-width: 800px;
+            max-width: 100%;
             text-align: center;
+            margin: 20px 0;
         }
-
-        .pixel-art {
-            margin-top: 20px;
-        }
-
-        .pixel-art img {
+        img {
             image-rendering: pixelated;
-            width: 200px;
-            height: 200px;
+            width: 1120px;
+            height: auto;
         }
-
         footer {
-            margin-top: 40px;
-            font-size: 14px;
+            margin-top: 20px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Taco!</h1>
-    </header>
-    <div class="content">
-        <p>I'm a game developer (I use GMS2) and game modder (Usually modding GMS2 games)</p>
-        <p>I mod Pizza Tower, Minecraft, Doom, Etc</p>
-        <p>I also love oldschool / 2000s media, and modding old games or playing them.</p>
+    <div class="scroll-container">
+        <div class="content-wrapper">
+            <img src="art.png" alt="Pixel art illustration">
+            <div class="content">
+                <p>I'm a game developer (I use GMS2) and game modder (Usually modding GMS2 games)</p>
+                <p>I mod Pizza Tower, Minecraft, Doom, Etc</p>
+                <p>I also love oldschool / 2000s media, and modding old games or playing them.</p>
+            </div>
+        </div>
     </div>
     <footer>
-        <p>NOT copyrighted, i think?</p>
+        NOT &copy;, the copyright company people, lol.
     </footer>
 </body>
 </html>
